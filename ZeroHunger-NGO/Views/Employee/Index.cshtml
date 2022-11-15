@@ -1,0 +1,40 @@
+﻿@model IEnumerable<NGO.DB.DonationDetail>
+
+@{
+    ViewBag.Title = "Pending Collection Request";
+}
+
+<h2>Pending Collection Request</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DonationId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CollectionDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpId)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DonationId)
+            </td>
+            <td>
+                @ViewBag.Date[0]
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpId)
+            </td>
+            <td>
+                @Html.ActionLink("Collected", "Edit", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

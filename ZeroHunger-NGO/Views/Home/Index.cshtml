@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron text-center">
+    <h1>Feed Hungry People</h1>
+    <p class="lead text-danger">Donate Food, Remove Hunger!</p>
+</div>
+
+<div class="jumbotron">
+    <form class="form-signin text-center">
+        <div class="w-50">
+            <h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
+
+            <input type="email" name="email" id="inputEmail" class="form-control center-block" placeholder="Email address" required autofocus>
+
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" name="password" id="inputPassword" class="form-control center-block" placeholder="Password" required>
+
+            <div class="form-group center-block">
+                <select class="form-control center-block">
+                    <option value="1">Admin</option>
+                    <option value="2">Employee</option>
+                    <option value="3">Restaurant</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Sign in" class="form-control mb-3 center-block btn btn-sm btn-primary">
+        </div>
+    </form>
+
+    <h2 class="text-center">Are you a restaurant and want to donate food?</h2>
+    <p class="text-center"><a href="Home/Registration">Sign up</a></p>
+</div>

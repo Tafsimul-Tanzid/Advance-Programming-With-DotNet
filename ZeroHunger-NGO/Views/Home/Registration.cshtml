@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+}
+
+<div class="container-fluid">
+    <h2 class="text-center">Restaurant Registration</h2>
+    <form>
+        <label>Restaurant Name <span class="text text-danger">*</span></label> <br />
+        <input type="text" name="name" required /> <br />
+
+        <label>Location <span class="text text-danger">*</span></label> <br />
+        <input type="text" name="location" required /> <br />
+
+        <label>Email <span class="text text-danger">*</span></label> <br />
+        <input type="email" name="email" required /> <br />
+
+        <label>Password <span class="text text-danger">*</span></label> <br />
+        <input type="password" name="password" required /><br />
+
+        <input type="submit" class="btn btn-sm btn-primary " value="Sign up" />
+    </form>
+</div>
